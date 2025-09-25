@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Had s levely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-header">
+        <h1>Had</h1>
+        <div class="score-board">
+            Úroveň: <span id="level">1</span> | Skóre: <span id="score">0</span> / <span id="target-score">15</span>
+        </div>
+        <button id="reset-progress-btn">Resetovat postup</button>
+    </div>
+    
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    <div id="controls-overlay">
+        <div class="controls-box">
+            <div class="key-row"><div class="key">↑</div></div>
+            <div class="key-row">
+                <div class="key">←</div><div class="key">↓</div><div class="key">→</div>
+            </div>
+            <p>Stiskni šipku pro start</p>
+        </div>
+    </div>
+    
+    <div id="level-complete-screen" class="hidden">
+        <div class="win-box">
+            <h2>Level dokončen!</h2>
+            <p>Jsi připraven na další výzvu?</p>
+            <button id="next-level-btn">Další level</button>
+        </div>
+    </div>
+
+    <div id="game-complete-screen" class="hidden">
+        <div class="win-box final-win">
+            <h2>Gratuluji!</h2>
+            <p>Dokončil jsi všech 5 levelů!</p>
+            <button id="play-again-btn">Hrát znovu od Levelu 1</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
