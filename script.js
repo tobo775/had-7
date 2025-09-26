@@ -188,3 +188,4 @@ playAgainBtn.addEventListener('click', () => { // NOVÉ
 loadGame();
 
 resetGame();
+
