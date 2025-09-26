@@ -19,8 +19,8 @@ const FOOD_COUNT = 3;
 const SAVE_KEY = 'snakeGameSave';
 
 const levels = {
-    1: { target: 15, speed: 200 }, 
-    2: { target: 20, speed: 200 },
+    1: { target: 15, speed: 210 }, 
+    2: { target: 20, speed: 210 },
     3: { target: 25, speed: 170 }, 
     4: { target: 30, speed: 170 },
     5: { target: 40, speed: 150 }
@@ -188,6 +188,7 @@ playAgainBtn.addEventListener('click', () => { // NOVÉ
 loadGame();
 
 resetGame();
+
 
 
 
